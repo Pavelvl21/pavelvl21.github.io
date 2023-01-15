@@ -1,45 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
 }
 :root {
-  --primary-color: #ffffff;
-  --text-color: #eaaa3c;
+  --primary-color: #333c54;
+  --main-bg-color: #f6f6f6;
+  --main-text-color: #333c54;
+  --secondary-text-color: #d27230;
+  --main-hover-color: #d27230;
+  --icon-color: var(--main-text-color);
+  --nav-bg-color: #333c54;
+  --nav-hover-color: var(--primary-color);
+  --icon-border-color: var(--secondary-text-color);
 }
+
 body {
-  font-family: Inter, sans-serif;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 18rem 1fr;
+  grid-template-rows: 1fr;
+
+  grid-column-gap: 10px;
+  gap: 0px;
+
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-text-color);
+
 }
-@media (min-width: 1024px) {
-  body {
-    padding-left: 18rem;
-  } 
+
+section {
+  min-height: calc(100vh - 3rem);
 }
+
 
 .navbar {
-  position: fixed;
-  background: #1a1b20;
+  background: var(--nav-bg-color);
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 18rem;
   display: flex;
   flex-direction: column;
-
 }
-
-.profile-foto {
+.navbar-img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
-
 .avatar {
   max-width: 200px;
   border-radius: 100%;
   border: 0.4rem solid;
-  border-color: #eaaa3c;
+  border-color: var(--icon-border-color);
 }
 
 .navbar-nav {
@@ -50,23 +64,125 @@ body {
   list-style: none;
   gap: 3rem;
 }
+/* создать брэйпоинт для navbar-nav gap, чтобы сдедать больше отступ при увеличении страницы*/
+
 
 .navbar-item {
   flex: 1 1 auto;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
-  color: var(--text-color)
+  color: var(--secondary-text-color);
 }
-.navbar-item:hover {
-  color: var(--primary-color)
+
+.navbar-link {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+
+.navbar-link:hover {
+  color: var(--main-hover-color);
 }
 
 .container {
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  background-color: #81808e;
-
+  overflow-y:scroll;  
+  background-color: var(--main-bg-color);
+  padding: 2rem;
 }
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+
+
+.profile-name {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: clamp(2rem, 10vw, 6rem);
+  text-transform: uppercase;
+}
+
+.profile-name-lastname {
+  margin: 0;
+  color: var(--secondary-text-color);
+}
+
+.profile-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--main-hover-color);
+}
+.description {
+  font-size: 1.4rem;
+}
+
+.profile-communication {
+  display: flex;
+  justify-content: left;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.social-item,
+.icon,
+.profile-download-item {
+  fill: var(--icon-color);
+}
+
+.contact-item,
+.profile-download-item {
+  
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.contacts-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  color: var(--secondary-text-color);
+}
+
+
+.socials {
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  flex: 2;
+  align-items: center;
+
+  justify-content: center;
+}
+
+a>svg:hover {
+
+  fill: var(--main-hover-color);
+}
+
+
+
+
+
+
+
