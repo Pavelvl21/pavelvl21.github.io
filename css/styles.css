@@ -1,55 +1,381 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
-
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Tahoma', 'Geneva', sans-serif;
 }
 :root {
-  --main-bg-color: #f6f6f6;
-  --secondary-bg-color: #333c54;
-
-
-  --main-text-color: #d27230;
-
+  --primary-bg-color: #d3d0da;
+  --main-bg-color: #b5b3be;
+  --nav-bg-color: #4e7ba7;
+  --primary-text-color:#ffffff;
+  --secondary-text-color: #ce6c47;
+  --sidebar-item-size: 250px;
 
 }
 
 body {
   display: grid;
   max-width: 992px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   margin: 0 auto;
-  color: var(--main-text-color);
-  background-color: var(--main-bg-color);
-  grid-template-columns: 35% 1fr;
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+  grid-template-columns: 30% 1fr;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas:
-      "header header"
-      "sidebar main"
-      "sidebar footer";
+      "nav nav"
+      "aside main"
+      "footer footer";
 
 }
-header {
-  grid-area: header;
+/* ---------------------navbar--------------------- */
+
+nav {
+  min-height: 2vh;
+  grid-area: nav;
 }
+.navbar-nav {
+  flex-grow: 3;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* .navbar-nav li a {
+  text-decoration: none;
+  color: var(--primary-bg-color);
+} */
+
+
+.navbar-nav__item {
+  list-style: none;
+}
+
+/* ---------------------aside--------------------- */
+.sidebar {
+  grid-area: aside;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+
+
+  /* font-size: 0.9rem; */
+
+
+  color: var(--primary-bg-color);
+  background-color: var(--nav-bg-color);
+
+
+}
+
+.sidebar__profile {
+  /* flex-grow: 0; */
+
+  display: flex;
+  align-items: center;
+}
+
+.profile__foto {
+ width: 100%;
+ 
+}
+
+.sidebar__greeting {
+
+  /* flex-grow: 0; */
+  padding: 0px 1rem;
+
+
+  line-height: 2rem
+}
+
+.greeting__title {
+  padding-bottom: 1.5rem;
+}
+.greeting__text {
+  padding-bottom: 1rem;
+}
+
+.sidebar__socials {
+  /* flex-grow: 1; */
+ 
+  width: 100%;
+
+  /* display: flex;
+  flex-direction: column; */
+  height: 100%;
+  /* justify-content: space-around; */
+  
+}
+.sidebar__socials {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem
+}
+
+.socials__item {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  gap: 0.5rem;
+
+
+}
+
+.socials__icon-link {
+  fill: var(--primary-bg-color);
+  text-decoration: none;
+  display: flex;
+}
+
+/* ---------------------aside--------------------- */
+
 
 main {
   grid-column: main;
+
+  background-color: var(--main-bg-color);
 }
 
-nav {
-  grid-row: sidebar;
+
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 1rem
 }
+
+.aboutme-name {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: clamp(2rem, 10vw, 6rem);
+  text-transform: uppercase;
+}
+
+.name-lastname {
+
+  color: var(--secondary-text-color);
+}
+
+.aboutme-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--main-hover-color);
+}
+
+.text-description {
+  font-size: 1.4rem;
+}
+
+.text-title {
+  font-size: 1.6rem;
+}
+
+
+
+
+/* .project-link {
+  text-decoration: none;
+} */
+
+
+
 
 footer {
-  grid-column: footer;
+  height: 2vh;
+
 }
 
-.profile-foto {
+
+
+/* 
+section {
+  
+}
+
+
+.navbar {
+  background: var(--nav-bg-color);
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+.navbar-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.avatar {
   max-width: 200px;
+  border-radius: 100%;
   border: 0.4rem solid;
-  border-radius: 100%;  
   border-color: var(--icon-border-color);
 }
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  gap: 3rem;
+}
+/* создать брэйпоинт для navbar-nav gap, чтобы сдедать больше отступ при увеличении страницы*/
+
+/* 
+.navbar-item {
+  flex: 1 1 auto;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+
+.navbar-link {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+
+.navbar-link:hover {
+  color: var(--main-bg-color);
+}
+
+.container {
+  background-color: var(--main-bg-color);
+  padding: 0 2rem 2rem;
+}
+.profile {
+  min-height: 100vh;
+}
+
+.profile,
+.education,
+.courses {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.education,
+.courses  {
+  min-height: 50vh
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+
+
+.profile-name {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: clamp(2rem, 10vw, 6rem);
+  text-transform: uppercase;
+}
+
+.profile-name-lastname {
+
+  color: var(--secondary-text-color);
+}
+
+.profile-title,
+.education-title,
+.courses-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--main-hover-color);
+}
+.text-description {
+  font-size: 1.4rem;
+}
+.text-title {
+  font-size: 1.6rem;
+}
+
+
+.profile-communication {
+  display: flex;
+  justify-content: left;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.social-item,
+.icon,
+.profile-download-item {
+  fill: var(--icon-color);
+}
+
+.contact-item,
+.profile-download-item {
+  
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.socials {
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  flex: 2;
+  align-items: center;
+
+  justify-content: center;
+}
+
+.university,
+.provider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.university-title,
+.provider-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.dates {
+  font-size: 1.3rem;
+  color: var(--secondary-text-color);
+}
+
+a>svg:hover {
+
+  fill: var(--main-hover-color);
+}
+.footer {
+  height: 2rem;
+} */
+
+
+
+
 
  
