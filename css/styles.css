@@ -139,8 +139,10 @@ nav {
 
 @media (max-width: 962px) {
   .sidebar {
-    padding-top: 2rem;
-    height: 100vh;
+    /* padding-top: 2rem; */
+    padding-bottom: 0px;
+    height: calc(100vh - 1rem);
+    justify-content: space-around;
   }
 
   .profile__foto {
@@ -162,7 +164,6 @@ nav {
 
 @media (max-width: 962px) {
   .sidebar__greeting {
-    border-top: 100px;
     font-size: 1rem;
     line-height: 2rem;
 
@@ -185,7 +186,7 @@ nav {
   }
 
   .sidebar {
-    gap: 2rem;
+    gap: 1rem;
   }
 
 
@@ -202,10 +203,16 @@ nav {
   gap: 1rem;
   padding-bottom: 1rem;
   text-align: justify;
-  height: 100%;
+}
+
+@media (max-width: 962px) {
+  .greeting__text {
+    padding-bottom: 0px;
+  }
 
 
 }
+
 
 
 .sidebar__socials {
