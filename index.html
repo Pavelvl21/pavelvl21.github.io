@@ -34,11 +34,13 @@
       <div class="greeting sidebar__greeting">
         <h1 class="greeting__title">Привет!</h1>
         <p class="greeting__text">
-          Меня зовут Павел. Я обучаюсь в онлайн-школе программирования Hexlet.io по специальности Frontend Developer на
-          JavaScript. Работаю над дипломным проектом real-time SPA "chat(slack)" с использованием React.
-        </p>
-        <p class="greeting__text">
-          Заинтересован в прохождении стажировки с возможностью трудоустройства.
+          <span>
+            Меня зовут Павел. Я обучаюсь в онлайн-школе программирования Hexlet.io по специальности Frontend Developer на
+            JavaScript. Работаю над дипломным проектом real-time single-page application "Chat(slack)" с использованием React.
+          </span>
+          <span>
+            Заинтересован в прохождении стажировки с возможностью трудоустройства.
+          </span>
         </p>
       </div>
       <div class="socials sidebar__socials">
@@ -106,14 +108,20 @@
               <h3 class="item__name">Международный университет "МИТСО", Минск</h3>
               <p class="item__prof">Менеджмент / Экономист-менеджер</p>
             </div>
-            <p class="item__dates">2013 - 2016</p>
+            <p class="item__dates">
+              <span>2013</span>
+              <span>2016</span>
+            </p>
           </div>
           <div class="item section__item">
             <div class="item__title">
               <h3 class="item__name">ОЦ "ИПК" РИПО, Минск</h3>
               <p class="item__prof">Экономика и организация производства / Техник-экономист</p>
             </div>
-            <p class="item__dates">2002 - 2005</p>
+            <p class="item__dates">
+              <span>2002</span>
+              <span>2005</span>
+            </p>
           </div>
         </section>
         <section class="section container__section" id="ed">
@@ -123,37 +131,36 @@
               <h3 class="item__name">Hexlet.io</h3>
               <p class="item__prof">Frontend Developer</p>
             </div>
-            <p class="item__dates">04.2022 - по н.в.</p>
+            <p class="item__dates">
+              <span>04.2022</span>
+              <span>по н.в.</span>
+            </p>
           </div>
           <div class="item section__item">
             <div class="item__title">
               <h3 class="item__name">MANAGYM</h3>
               <p class="item__prof">Курс управленческих навыков</p>
             </div>
-            <p class="item__dates">02.2021 - 04.2021</p>
+            <p class="item__dates">
+              <span>02.2021</span>
+              <span>04.2021</span>
+            </p>
           </div>
         </section>
         <section class="section container__section">
           <h2 class="section__title">Учебные проекты</h2>
           <div class="item section__item">
             <div class="item__title">
-              <h3 class="item__name">"Игры разума"</h3>
-              <p class="item__description">CLI-приложение, включающее 5 простых математических игр</p>
-              <a class="item__link" href="https://github.com/Pavelvl21/frontend-project-lvl1" target="_blank">
-                <span class="item__url">https://github.com/Pavelvl21/frontend-project-lvl1</span>
+              <h3 class="item__name">"Чат"</h3>
+              <p class="item__description">Одностроничное real-time приложение на React</p>
+              <a class="item__link" href="https://github.com/Pavelvl21/frontend-project-12" target="_blank">
+                <span class="item__url">https://github.com/Pavelvl21/frontend-project-12</span>
               </a>
             </div>
-            <p class="item__dates">05.2022</p>
-          </div>
-          <div class="item section__item">
-            <div class="item__title">
-              <h3 class="item__name">"Вычислитель отличий"</h3>
-              <p class="item__description">CLI-приложение, определяющее разницу между двумя структурами данных</p>
-              <a class="item__link" href="https://github.com/Pavelvl21/frontend-project-lvl2" target="_blank">
-                <span class="item__url">https://github.com/Pavelvl21/frontend-project-lvl2</span>
-              </a>
-            </div>
-            <p class="item__dates">07.2022 - 08.2022</p>
+            <p class="item__dates">
+              <span>12.2022</span>
+              <span>по н.в.</span>
+            </p>
           </div>
           <div class="item section__item">
             <div class="item__title">
@@ -166,17 +173,46 @@
                 <span class="item__url">https://github.com/Pavelvl21/frontend-project-11</span>
               </a>
             </div>
-            <p class="item__dates">10.2022 - 11.2022</p>
+            <p class="item__dates">
+              <span>10.2022</span>
+              <span>11.2022</span>
+            </p>
           </div>
           <div class="item section__item">
             <div class="item__title">
-              <h3 class="item__name">"Чат"</h3>
-              <p class="item__description">Одностроничное real-time приложение на React</p>
-              <a class="item__link" href="https://github.com/Pavelvl21/frontend-project-12" target="_blank">
-                <span class="item__url">https://github.com/Pavelvl21/frontend-project-12</span>
+              <h3 class="item__name">"Вычислитель отличий"</h3>
+              <p class="item__description">CLI-приложение, определяющее разницу между двумя структурами данных</p>
+              <a class="item__link" href="https://github.com/Pavelvl21/frontend-project-lvl2" target="_blank">
+                <span class="item__url">https://github.com/Pavelvl21/frontend-project-lvl2</span>
               </a>
             </div>
-            <p class="item__dates">12.2022 - по н.в.</p>
+            <p class="item__dates">
+              <span>07.2022</span>
+              <span>08.2022</span>
+            </p>
+          </div>
+          <div class="item section__item">
+            <div class="item__title">
+              <h3 class="item__name">"Игры разума"</h3>
+              <p class="item__description">CLI-приложение, включающее 5 простых математических игр</p>
+              <a class="item__link" href="https://github.com/Pavelvl21/frontend-project-lvl1" target="_blank">
+                <span class="item__url">https://github.com/Pavelvl21/frontend-project-lvl1</span>
+              </a>
+            </div>
+            <p class="item__dates">
+              <span>05.2022</span>
+            </p>
+          </div>
+        </section>
+        <section class="section container__section">
+          <h2 class="section__title">Навыки</h2>
+          <div class="item section__item">
+            <h3 class="item__title item__title--inline">
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>React</span>
+            </h3>
           </div>
         </section>
         <section class="section container__section">
@@ -186,30 +222,10 @@
               <h3 class="item__name">ООО "Триовист"</h3>
               <p class="item__prof">Ведущий специалист по работе с поставщиками</p>
             </div>
-            <p class="item__dates">10.2018 - по н.в.</p>
-          </div>
-        </section>
-        <section class="section container__section">
-          <h2 class="section__title">Навыки</h2>
-          <div class="item section__item">
-            <div class="item__title item__title--sm">
-              <h3 class="item__name">JavaScript</h3>
-            </div>
-          </div>
-          <div class="item section__item">
-            <div class="item__title item__title--sm">
-              <h3 class="item__level">HTML</h3>
-            </div>
-          </div>
-          <div class="item section__item">
-            <div class="item__title item__title--sm">
-              <h3 class="item__level">CSS</h3>
-            </div>
-          </div>
-          <div class="item section__item">
-            <div class="item__title item__title--sm">
-              <h3 class="item__level">React</h3>
-            </div>
+            <p class="item__dates">
+              <span>10.2018</span>
+              <span>по н.в.</span>
+            </p>
           </div>
         </section>
       </div>      
