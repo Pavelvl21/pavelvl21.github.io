@@ -9,22 +9,26 @@
 </head>
 
 <body class="body">
-  <nav class="navbar">
-    <ul class="navbar-nav">
-      <li class="navbar-nav__item">
-        <a class="navbar-nav__link" href="#">Образование</a>
+  <nav class="nav">
+    <div class="nav__menu">
+    <ul class="menu">
+      <li>
+        <a class="menu__item" href="#" name="education">Образование</a>
       </li>
-      <li class="navbar-nav__item">
-        <a class="navbar-nav__link" href="#">Проекты</a>
+      <li>
+        <a class="menu__item" href="#" name="courses">Курсы</a>
       </li>
-      <li class="navbar-nav__item">
-        <a class="navbar-nav__link" href="#">Навыки</a>
+      <li>
+        <a class="menu__item" href="#" name="projects">Проекты</a>
       </li>
-      <li class="navbar-nav__item">
-        <a class="navbar-nav__link" href="#">Место работы</a>
+      <li>
+        <a class="menu__item" href="#" name="skills">Навыки</a>
       </li>
-      <li class="navbar-nav__item">
-        <a class="navbar-nav__link" href="#">Увлечения</a>
+      <li>
+        <a class="menu__item" href="#" name="jobs">Место работы</a>
+      </li>
+      <li>
+        <a class="menu__item" href="#" name="resume">Резюме</a>
       </li>
     </ul>
   </nav>
@@ -103,7 +107,7 @@
         </h1>
         <p class="header__prof">frontend developer</p>
       </header>
-      <section class="section container__section" id="ed">
+      <section class="section container__section" id="education">
         <h2 class="section__title">Образование</h2>
         <div class="item section__item">
           <div class="item__title">
@@ -126,7 +130,7 @@
           </p>
         </div>
       </section>
-      <section class="section container__section" id="ed">
+      <section class="section container__section" id="courses">
         <h2 class="section__title">Курсы, тренинги</h2>
         <div class="item section__item">
           <div class="item__title">
@@ -149,7 +153,7 @@
           </p>
         </div>
       </section>
-      <section class="section container__section">
+      <section class="section container__section" id="projects">
         <h2 class="section__title">Учебные проекты</h2>
         <div class="item section__item">
           <div class="item__title">
@@ -206,7 +210,7 @@
           </p>
         </div>
       </section>
-      <section class="section container__section">
+      <section class="section container__section" id="skills">
         <h2 class="section__title">Навыки</h2>
         <div class="item section__item">
           <h3 class="item__title item__title--inline">
@@ -217,7 +221,7 @@
           </h3>
         </div>
       </section>
-      <section class="section container__section">
+      <section class="section container__section" id="jobs">
         <h2 class="section__title">Место работы</h2>
         <div class="item section__item">
           <div class="item__title">
@@ -236,6 +240,7 @@
     <span>Creeted by</span>
     <a class="footer__item" href="https://github.com/Pavelvl21" target="_blank" name="author">Pavel Yudenka</a>
   </footer>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
