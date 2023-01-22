@@ -1,238 +1,241 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link rel="stylesheet" href="./css/styles.css">
-  </head>
-  
-  <body class="body">
-    <nav class="navbar">
-      <ul class="navbar-nav">
-        <li class="navbar-nav__item">
-          <a class="navbar-nav__link" href="#">Образование</a>
-        </li>
-        <li class="navbar-nav__item">
-          <a class="navbar-nav__link" href="#">Проекты</a>
-        </li>
-        <li class="navbar-nav__item">
-          <a class="navbar-nav__link" href="#">Навыки</a>
-        </li>
-        <li class="navbar-nav__item">
-          <a class="navbar-nav__link" href="#">Место работы</a>
-        </li>
-        <li class="navbar-nav__item">
-          <a class="navbar-nav__link" href="#">Увлечения</a>
-        </li>
-      </ul>
-    </nav>
-    <aside class="sidebar">
-      <div class="profile sidebar__profile">
-        <img class="profile__foto" src="./assets/profile-foto.jpg" alt="Pavel Yudenka">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="body">
+  <nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="navbar-nav__item">
+        <a class="navbar-nav__link" href="#">Образование</a>
+      </li>
+      <li class="navbar-nav__item">
+        <a class="navbar-nav__link" href="#">Проекты</a>
+      </li>
+      <li class="navbar-nav__item">
+        <a class="navbar-nav__link" href="#">Навыки</a>
+      </li>
+      <li class="navbar-nav__item">
+        <a class="navbar-nav__link" href="#">Место работы</a>
+      </li>
+      <li class="navbar-nav__item">
+        <a class="navbar-nav__link" href="#">Увлечения</a>
+      </li>
+    </ul>
+  </nav>
+  <aside class="sidebar">
+    <div class="profile sidebar__profile">
+      <img class="profile__foto" src="./assets/profile-foto.jpg" alt="Pavel Yudenka">
+    </div>
+    <div class="greeting sidebar__greeting">
+      <h1 class="greeting__title">Привет!</h1>
+      <p class="greeting__text">
+        <span>
+          Меня зовут Павел. Я обучаюсь в онлайн-школе программирования Hexlet.io по специальности Frontend Developer на
+          JavaScript. Работаю над дипломным проектом real-time single-page application "Chat(slack)" с использованием
+          React.
+        </span>
+        <span>
+          Заинтересован в прохождении стажировки с возможностью трудоустройства.
+        </span>
+      </p>
+    </div>
+    <div class="socials sidebar__socials">
+      <h1 class="socials__title">Контакты</h1>
+      <div class="socials socials__item">
+        <a class="socials__icon-link" href="#!" name="skype">
+          <svg class="socials__svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+            <path
+              d="M15.748 13.648c0 1.773-1.414 2.935-3.523 2.935-1.855 0-3.721-.845-3.711-2.299.002-.439.328-.841.763-.841 1.093 0 1.083 1.63 2.822 1.63 1.221 0 1.638-.669 1.638-1.134 0-1.684-5.275-.652-5.275-3.817 0-1.713 1.401-2.895 3.604-2.765 2.101.124 3.332 1.052 3.451 1.918.059.566-.316 1.007-.968 1.007-.95 0-1.047-1.272-2.684-1.272-.738 0-1.361.308-1.361.977 0 1.397 5.244.586 5.244 3.661zm8.252-1.648c0 6.627-5.373 12-12 12s-12-5.373-12-12 5.373-12 12-12 12 5.373 12 12zm-5.591 1.147c.792-4.53-3.159-8.407-7.614-7.571-3.396-2.077-7.293 1.882-5.21 5.267-.811 4.519 3.139 8.447 7.631 7.589 3.401 2.062 7.287-1.902 5.193-5.285z" />
+          </svg>
+        </a>
+        <span class="socials__contact">live:2657983147104759832</span>
       </div>
-      <div class="greeting sidebar__greeting">
-        <h1 class="greeting__title">Привет!</h1>
-        <p class="greeting__text">
-          <span>
-            Меня зовут Павел. Я обучаюсь в онлайн-школе программирования Hexlet.io по специальности Frontend Developer на
-            JavaScript. Работаю над дипломным проектом real-time single-page application "Chat(slack)" с использованием React.
-          </span>
-          <span>
-            Заинтересован в прохождении стажировки с возможностью трудоустройства.
-          </span>
-        </p>
+      <div class="socials socials__item">
+        <a class="socials__icon-link" href="#" name="telegram">
+          <svg class="socials__svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 16 16">
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+          </svg>
+        </a>
+        <span class="socials__contact">@Pavel_vld</span>
       </div>
-      <div class="socials sidebar__socials">
-        <h1 class="socials__title">Контакты</h1>
-        <div class="socials socials__item">  
-          <a class="socials__icon-link" href="#!" name="skype">
-            <svg class="socials__svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
-              <path
-                d="M15.748 13.648c0 1.773-1.414 2.935-3.523 2.935-1.855 0-3.721-.845-3.711-2.299.002-.439.328-.841.763-.841 1.093 0 1.083 1.63 2.822 1.63 1.221 0 1.638-.669 1.638-1.134 0-1.684-5.275-.652-5.275-3.817 0-1.713 1.401-2.895 3.604-2.765 2.101.124 3.332 1.052 3.451 1.918.059.566-.316 1.007-.968 1.007-.95 0-1.047-1.272-2.684-1.272-.738 0-1.361.308-1.361.977 0 1.397 5.244.586 5.244 3.661zm8.252-1.648c0 6.627-5.373 12-12 12s-12-5.373-12-12 5.373-12 12-12 12 5.373 12 12zm-5.591 1.147c.792-4.53-3.159-8.407-7.614-7.571-3.396-2.077-7.293 1.882-5.21 5.267-.811 4.519 3.139 8.447 7.631 7.589 3.401 2.062 7.287-1.902 5.193-5.285z" />
-            </svg>
-          </a>
-          <span class="socials__contact">live:2657983147104759832</span>
-        </div>
-        <div class="socials socials__item">
-          <a class="socials__icon-link" href="#" name="telegram">
-            <svg class="socials__svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 16 16">
-              <path
-                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
-            </svg>
-          </a>
-          <span class="socials__contact">@Pavel_vld</span>
-        </div>
-        <div class="socials socials__item">
-          <a class="socials__icon-link" href="p.yudenko@gmail.com" name="mail">
-            <svg class="socials__svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
-              <path
-                d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z" />
-            </svg>
-          </a>
-          <span class="socials__contact">p.yudenko@gmail.com</span>
-        </div>
-        <div class="socials socials__item">
-          <a class="socials__icon-link" href="https://www.linkedin.com/in/PavelYudenka" target="_blank" name="linkedin">
-            <svg class="socials__svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
-              <path
-                d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zM8.951 9.404H6.165V17.5H8.95V9.404zm6.841-.192c-1.324 0-1.993.629-2.385 1.156l-.127.181V9.403h-2.786l.01.484c.006.636.007 1.748.005 2.93l-.015 4.683h2.786v-4.522c0-.242.018-.484.092-.657.202-.483.66-.984 1.43-.984.955 0 1.367.666 1.408 1.662l.003.168V17.5H19v-4.643c0-2.487-1.375-3.645-3.208-3.645zM7.576 5.5C6.623 5.5 6 6.105 6 6.899c0 .73.536 1.325 1.378 1.392l.18.006c.971 0 1.577-.621 1.577-1.398C9.116 6.105 8.53 5.5 7.576 5.5z" />
-            </svg>
-          </a>
-          <span class="socials__contact">linkedin.com/in/Pavel Yudenka</span>
-        </div>
-        <div class="socials socials__item">
-          <a class="socials__icon-link" href="https://github.com/Pavelvl21" target="_blank" name="github">
-            <svg class="socials__svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
-              <path
-                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-            </svg>
-          </a>
-          <span class="socials__contact">github.com/Pavelvl21</span>
-        </div>
+      <div class="socials socials__item">
+        <a class="socials__icon-link" href="p.yudenko@gmail.com" name="mail">
+          <svg class="socials__svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+            <path
+              d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z" />
+          </svg>
+        </a>
+        <span class="socials__contact">p.yudenko@gmail.com</span>
       </div>
-    </aside>
-    <main class="resume">
-      <di class="container">
-        <header class="header container__header">
-          <h1 class="header__name">
-            <span class="header__firstname">Павел</span>
-            <span class="header__lastname">Юденко</span>
-          </h1>
-          <p class="header__prof">frontend developer</p>
-        </header>
-        <section class="section container__section" id="ed">
-          <h2 class="section__title">Образование</h2>
-          <div class="item section__item">
-            <div class="item__title">
-              <h3 class="item__name">Международный университет "МИТСО", Минск</h3>
-              <p class="item__prof">Менеджмент / Экономист-менеджер</p>
-            </div>
-            <p class="item__dates">
-              <span>2013</span>
-              <span>2016</span>
-            </p>
+      <div class="socials socials__item">
+        <a class="socials__icon-link" href="https://www.linkedin.com/in/PavelYudenka" target="_blank" name="linkedin">
+          <svg class="socials__svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+            <path
+              d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zM8.951 9.404H6.165V17.5H8.95V9.404zm6.841-.192c-1.324 0-1.993.629-2.385 1.156l-.127.181V9.403h-2.786l.01.484c.006.636.007 1.748.005 2.93l-.015 4.683h2.786v-4.522c0-.242.018-.484.092-.657.202-.483.66-.984 1.43-.984.955 0 1.367.666 1.408 1.662l.003.168V17.5H19v-4.643c0-2.487-1.375-3.645-3.208-3.645zM7.576 5.5C6.623 5.5 6 6.105 6 6.899c0 .73.536 1.325 1.378 1.392l.18.006c.971 0 1.577-.621 1.577-1.398C9.116 6.105 8.53 5.5 7.576 5.5z" />
+          </svg>
+        </a>
+        <span class="socials__contact">linkedin.com/in/Pavel Yudenka</span>
+      </div>
+      <div class="socials socials__item">
+        <a class="socials__icon-link" href="https://github.com/Pavelvl21" target="_blank" name="github">
+          <svg class="socials__svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg>
+        </a>
+        <span class="socials__contact">github.com/Pavelvl21</span>
+      </div>
+    </div>
+  </aside>
+  <main class="resume">
+    <div class="container">
+      <header class="header container__header">
+        <h1 class="header__name">
+          <span class="header__firstname">Павел</span>
+          <span class="header__lastname">Юденко</span>
+        </h1>
+        <p class="header__prof">frontend developer</p>
+      </header>
+      <section class="section container__section" id="ed">
+        <h2 class="section__title">Образование</h2>
+        <div class="item section__item">
+          <div class="item__title">
+            <h3 class="item__name">Международный университет "МИТСО", Минск</h3>
+            <p class="item__prof">Менеджмент / Экономист-менеджер</p>
           </div>
-          <div class="item section__item">
-            <div class="item__title">
-              <h3 class="item__name">ОЦ "ИПК" РИПО, Минск</h3>
-              <p class="item__prof">Экономика и организация производства / Техник-экономист</p>
-            </div>
-            <p class="item__dates">
-              <span>2002</span>
-              <span>2005</span>
-            </p>
+          <p class="item__dates">
+            <span>2013</span>
+            <span>2016</span>
+          </p>
+        </div>
+        <div class="item section__item">
+          <div class="item__title">
+            <h3 class="item__name">ОЦ "ИПК" РИПО, Минск</h3>
+            <p class="item__prof">Экономика и организация производства / Техник-экономист</p>
           </div>
-        </section>
-        <section class="section container__section" id="ed">
-          <h2 class="section__title">Курсы, тренинги</h2>
-          <div class="item section__item">
-            <div class="item__title">
-              <h3 class="item__name">Hexlet.io</h3>
-              <p class="item__prof">Frontend Developer</p>
-            </div>
-            <p class="item__dates">
-              <span>04.2022</span>
-              <span>по н.в.</span>
-            </p>
+          <p class="item__dates">
+            <span>2002</span>
+            <span>2005</span>
+          </p>
+        </div>
+      </section>
+      <section class="section container__section" id="ed">
+        <h2 class="section__title">Курсы, тренинги</h2>
+        <div class="item section__item">
+          <div class="item__title">
+            <h3 class="item__name">Hexlet.io</h3>
+            <p class="item__prof">Frontend Developer</p>
           </div>
-          <div class="item section__item">
-            <div class="item__title">
-              <h3 class="item__name">MANAGYM</h3>
-              <p class="item__prof">Курс управленческих навыков</p>
-            </div>
-            <p class="item__dates">
-              <span>02.2021</span>
-              <span>04.2021</span>
-            </p>
+          <p class="item__dates">
+            <span>04.2022</span>
+            <span>по н.в.</span>
+          </p>
+        </div>
+        <div class="item section__item">
+          <div class="item__title">
+            <h3 class="item__name">MANAGYM</h3>
+            <p class="item__prof">Курс управленческих навыков</p>
           </div>
-        </section>
-        <section class="section container__section">
-          <h2 class="section__title">Учебные проекты</h2>
-          <div class="item section__item">
-            <div class="item__title">
-              <h3 class="item__name">"Чат"</h3>
-              <p class="item__description">Одностроничное real-time приложение на React</p>
-              <a class="item__link" href="https://github.com/Pavelvl21/frontend-project-12" target="_blank">
-                <span class="item__url">https://github.com/Pavelvl21/frontend-project-12</span>
-              </a>
-            </div>
-            <p class="item__dates">
-              <span>12.2022</span>
-              <span>по н.в.</span>
-            </p>
+          <p class="item__dates">
+            <span>02.2021</span>
+            <span>04.2021</span>
+          </p>
+        </div>
+      </section>
+      <section class="section container__section">
+        <h2 class="section__title">Учебные проекты</h2>
+        <div class="item section__item">
+          <div class="item__title">
+            <h3 class="item__name">"Чат"</h3>
+            <p class="item__description">Одностроничное real-time приложение на React</p>
+            <a class="item__link" href="https://github.com/Pavelvl21/frontend-project-12" target="_blank">
+              <span class="item__url">https://github.com/Pavelvl21/frontend-project-12</span>
+            </a>
           </div>
-          <div class="item section__item">
-            <div class="item__title">
-              <h3 class="item__name">"RSS-агрегатор"</h3>
-              <p class="item__description">Сервис для агрегации RSS-потоков, с помощью которых удобно читать
-                разнообразные источники,
-                например, блоги. Он позволяет
-                добавлять неограниченное количество RSS-лент, сам их обновляет и добавляет новые записи в общий поток</p>
-              <a class="item__link" href="https://github.com/Pavelvl21/frontend-project-11" target="_blank">
-                <span class="item__url">https://github.com/Pavelvl21/frontend-project-11</span>
-              </a>
-            </div>
-            <p class="item__dates">
-              <span>10.2022</span>
-              <span>11.2022</span>
-            </p>
+          <p class="item__dates">
+            <span>12.2022</span>
+            <span>по н.в.</span>
+          </p>
+        </div>
+        <div class="item section__item">
+          <div class="item__title">
+            <h3 class="item__name">"RSS-агрегатор"</h3>
+            <p class="item__description">Сервис для агрегации RSS-потоков, с помощью которых удобно читать
+              разнообразные источники,
+              например, блоги. Он позволяет
+              добавлять неограниченное количество RSS-лент, сам их обновляет и добавляет новые записи в общий поток</p>
+            <a class="item__link" href="https://github.com/Pavelvl21/frontend-project-11" target="_blank">
+              <span class="item__url">https://github.com/Pavelvl21/frontend-project-11</span>
+            </a>
           </div>
-          <div class="item section__item">
-            <div class="item__title">
-              <h3 class="item__name">"Вычислитель отличий"</h3>
-              <p class="item__description">CLI-приложение, определяющее разницу между двумя структурами данных</p>
-              <a class="item__link" href="https://github.com/Pavelvl21/frontend-project-lvl2" target="_blank">
-                <span class="item__url">https://github.com/Pavelvl21/frontend-project-lvl2</span>
-              </a>
-            </div>
-            <p class="item__dates">
-              <span>07.2022</span>
-              <span>08.2022</span>
-            </p>
+          <p class="item__dates">
+            <span>10.2022</span>
+            <span>11.2022</span>
+          </p>
+        </div>
+        <div class="item section__item">
+          <div class="item__title">
+            <h3 class="item__name">"Вычислитель отличий"</h3>
+            <p class="item__description">CLI-приложение, определяющее разницу между двумя структурами данных</p>
+            <a class="item__link" href="https://github.com/Pavelvl21/frontend-project-lvl2" target="_blank">
+              <span class="item__url">https://github.com/Pavelvl21/frontend-project-lvl2</span>
+            </a>
           </div>
-          <div class="item section__item">
-            <div class="item__title">
-              <h3 class="item__name">"Игры разума"</h3>
-              <p class="item__description">CLI-приложение, включающее 5 простых математических игр</p>
-              <a class="item__link" href="https://github.com/Pavelvl21/frontend-project-lvl1" target="_blank">
-                <span class="item__url">https://github.com/Pavelvl21/frontend-project-lvl1</span>
-              </a>
-            </div>
-            <p class="item__dates">
-              <span>05.2022</span>
-            </p>
+          <p class="item__dates">
+            <span>07.2022</span>
+            <span>08.2022</span>
+          </p>
+        </div>
+        <div class="item section__item">
+          <div class="item__title">
+            <h3 class="item__name">"Игры разума"</h3>
+            <p class="item__description">CLI-приложение, включающее 5 простых математических игр</p>
+            <a class="item__link" href="https://github.com/Pavelvl21/frontend-project-lvl1" target="_blank">
+              <span class="item__url">https://github.com/Pavelvl21/frontend-project-lvl1</span>
+            </a>
           </div>
-        </section>
-        <section class="section container__section">
-          <h2 class="section__title">Навыки</h2>
-          <div class="item section__item">
-            <h3 class="item__title item__title--inline">
-              <span>JavaScript</span>
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>React</span>
-            </h3>
+          <p class="item__dates">
+            <span>05.2022</span>
+          </p>
+        </div>
+      </section>
+      <section class="section container__section">
+        <h2 class="section__title">Навыки</h2>
+        <div class="item section__item">
+          <h3 class="item__title item__title--inline">
+            <span>JavaScript</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>React</span>
+          </h3>
+        </div>
+      </section>
+      <section class="section container__section">
+        <h2 class="section__title">Место работы</h2>
+        <div class="item section__item">
+          <div class="item__title">
+            <h3 class="item__name">ООО "Триовист"</h3>
+            <p class="item__prof">Ведущий специалист по работе с поставщиками</p>
           </div>
-        </section>
-        <section class="section container__section">
-          <h2 class="section__title">Место работы</h2>
-          <div class="item section__item">
-            <div class="item__title">
-              <h3 class="item__name">ООО "Триовист"</h3>
-              <p class="item__prof">Ведущий специалист по работе с поставщиками</p>
-            </div>
-            <p class="item__dates">
-              <span>10.2018</span>
-              <span>по н.в.</span>
-            </p>
-          </div>
-        </section>
-      </div>      
-    </main>
-    <footer class="footer">
-      <span>Creeted by</span>
-      <a class="footer__item" href="https://github.com/Pavelvl21" target="_blank" name="author">Pavel Yudenka</a>
-    </footer>
-  </body>
+          <p class="item__dates">
+            <span>10.2018</span>
+            <span>по н.в.</span>
+          </p>
+        </div>
+      </section>
+      </div>
+  </main>
+  <footer class="footer">
+    <span>Creeted by</span>
+    <a class="footer__item" href="https://github.com/Pavelvl21" target="_blank" name="author">Pavel Yudenka</a>
+  </footer>
+</body>
+
 </html>
