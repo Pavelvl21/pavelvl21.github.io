@@ -11,7 +11,19 @@
 <body class="body">
   <nav class="nav">
     <div class="nav__menu">
-    <ul class="menu">
+      <div class="menu-button">
+        <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+          <path fill="none" d="M0 0h48v48H0z" />
+          <path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z" />
+        </svg>
+        <svg class="menu-icon menu-icon--hidden" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+          <path fill="none" d="M0 0h24v24H0V0z" />
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+        </svg>
+      </div>    
+    <ul class="menu menu--hidden">
+      
       <li>
         <a class="menu__item" href="#" name="education">Образование</a>
       </li>
@@ -32,7 +44,7 @@
       </li>
     </ul>
   </nav>
-  <aside class="sidebar">
+  <aside class="sidebar" id="about">
     <div class="profile sidebar__profile">
       <img class="profile__foto" src="./assets/profile-foto.jpg" alt="Pavel Yudenka">
     </div>
@@ -98,7 +110,7 @@
       </div>
     </div>
   </aside>
-  <main class="resume">
+  <main class="resume" id="resume">
     <div class="container">
       <header class="header container__header">
         <h1 class="header__name">
@@ -240,6 +252,7 @@
     <span>Creeted by</span>
     <a class="footer__item" href="https://github.com/Pavelvl21" target="_blank" name="author">Pavel Yudenka</a>
   </footer>
+  <script src="./js/moby.js"></script>
   <script src="./js/index.js"></script>
 </body>
 

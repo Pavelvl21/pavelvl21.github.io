@@ -32,17 +32,61 @@ const header = document.querySelector('.header');
 const sections = document.querySelectorAll('.section');
 const containerContet = [header, ...sections];
 
+const menu = document.querySelector('.menu');
+
+const buttonIcons = document.querySelectorAll('.menu-icon');
+
+const menuButton = document.querySelector('.menu-button');
+
+const resume = document.querySelector('.resume');
+const sidebar = document.querySelector('.sidebar');
+
 const cb = ({ target }) => {
   containerContet.forEach(setHidden);
   const currentElement = document.querySelector(`#${target.name}`);
-  target.name === 'resume'
+  target.name === 'resume' || target.name === 'about'
     ? containerContet.forEach(setDefault)
     : setVisible(currentElement);
+  if (!menu.classList.contains('menu--hidden')) {
+    menu.classList.add('menu--hidden');
+    buttonIcons.forEach((button) =>
+      button.classList.toggle('menu-icon--hidden')
+    );
+  } 
 };
 
 const app = () => {
+  const overlay = [sidebar, resume, menu];
+  overlay.forEach((item) => {
+    item.addEventListener('click', () => {
+      if (!menu.classList.contains('menu--hidden')) {
+        menu.classList.add('menu--hidden');
+        buttonIcons.forEach((button) =>
+          button.classList.toggle('menu-icon--hidden')
+        );
+      }
+    });
+  })
+  // resume.addEventListener('click', () => {
+  //   if (!menu.classList.contains('menu--hidden')) {
+  //     menu.classList.add('menu--hidden');
+  //     buttonIcons.forEach((button) =>
+  //       button.classList.toggle('menu-icon--hidden')
+  //     );
+  //   }
+  // });
+
   const links = document.querySelectorAll('.menu__item');
   links.forEach((link) => link.addEventListener('click', cb));
+
+  
+  menuButton.addEventListener('click', () => {    
+    buttonIcons.forEach((button) => button.classList.toggle('menu-icon--hidden'));
+    menu.classList.toggle('menu--hidden');    
+  });
+
+  
+
 };
 
 app();

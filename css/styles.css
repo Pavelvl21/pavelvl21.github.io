@@ -70,6 +70,8 @@
 
 
 
+
+
 /* ---------------------navbar--------------------- */
 
 nav {
@@ -82,27 +84,84 @@ nav {
   display: flex;
   gap: 2.5rem;
   justify-content: center;
+  list-style-type: none;
 }
 .menu__item {
   text-decoration: none;
-  color: var(--primary-color-light)
+  color: var(--primary-color-light);
+  user-select: none;
+  
 
 }
 .menu__item:hover {
   color: var(--accent-color);
-  transition: 0.4s;
+  transition: 0.2s;
 }
 
 .menu__item:not(:hover) {
   color: var(--primary-color-light);
-  transition: 0.6s;
+  transition: 0.4s;
 }
 
 .footer__item:hover {
   color: var(--accent-color);
-  transition: 0.4s;
+  transition: 0.2s;
 }
 
+
+@media screen and (min-width: 962px) {
+  .menu-icon {
+    display: none;
+  }
+}
+@media screen and (max-width: 962px) {
+  
+
+  .menu {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    right: 0;
+
+    height: 100vh;
+    width: 30%;
+    background-color: white;
+    opacity: 0.7;
+
+    
+    
+  }
+    .menu--hidden {
+      display: none;
+    }
+  
+    .menu-button {
+  
+      user-select: none;
+  
+    }
+  
+    .menu-icon {
+      position: fixed;
+      right: 1rem;
+      z-index: 200;
+  
+  
+      fill: var(--accent-color);
+  
+    }
+        
+  
+    .menu-icon--hidden {
+      opacity: 0;
+      transition: 0.4s;
+    }
+
+    .menu__item {
+      font-size: 1.3rem;
+      color: var(--primary-color) !important;
+    }
+}
 
 
 
@@ -142,6 +201,7 @@ nav {
 .profile__foto {
   width: 100%;
   border-bottom: 0.7rem solid var(--accent-color);
+  user-select: none;
 
 }
 
@@ -160,9 +220,8 @@ nav {
     border-radius: 100%;
 
   }
-  .menu {
-    display: none;
-  }
+  
+
 }
 
 .sidebar__greeting {
@@ -271,13 +330,13 @@ nav {
 
 .socials__icon-link:hover {
   fill: var(--accent-color);
-  transition: 0.4s;
+  transition: 0.2s;
 
 }
 
 .socials__icon-link:not(:hover) {
   fill: var(--primary-color-light);
-  transition: 0.6s;
+  transition: 0.4s;
 }
 
 
@@ -392,11 +451,16 @@ nav {
 .container__header--visible {
   padding-top: 1rem;
   width: 100%;
-
-
-
-  
+  min-height: 100vh;  
 }
+
+@media screen and (max-width: 962px) {
+  .container__section--visible,
+  .container__header--visible {
+    padding-top: 2rem;
+  }  
+}
+
 .container__section--hidden,
 .container__header--hidden {
   display: none;
@@ -459,12 +523,12 @@ nav {
 
 .item__link:hover {
   color: var(--background-color);
-  transition: 0.4s;
+  transition: 0.2s;
 }
 
 .item__link:not(:hover) {
   color: var(--accent-color);
-  transition: 0.6s;
+  transition: 0.4s;
 }
 
 
@@ -488,12 +552,12 @@ footer {
 
 .footer__item:hover {
   color: var(--accent-color);
-  transition: 0.4s;
+  transition: 0.2s;
 }
 
 .footer__item:not(:hover) {
   color: var(--primary-color);
-  transition: 0.6s;
+  transition: 0.4s;
 }
 
 
