@@ -1,1 +1,1 @@
-### Link To: [CV](https://pavelvl21.github.io/)
+### Link To: [Resume](https://pavelvl21.github.io/)
