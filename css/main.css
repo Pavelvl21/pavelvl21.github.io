@@ -108,10 +108,10 @@
 
 }
 
-.item__title {
+/* .item__title {
   width: 80%;
 
-}
+} */
 
 
 
@@ -137,13 +137,25 @@
   justify-content: space-between;
 }
 
+.item__url--smart {
+  display: none;
+}
+
 @media screen and (max-width: 962px) {
 
   .container__header {
     margin-bottom: 0px;
   }
+  .item__url {
+    display: none;
+  }
+  .item__url--smart {
+  display: block;
+}
 
 }
+
+
 
 .item__link {
   color: var(--accent-color);
