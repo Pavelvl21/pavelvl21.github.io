@@ -34,12 +34,12 @@
 
 @media screen and (max-width: 962px) {
   .sidebar {
-    /* padding-top: 2rem; */
-    padding: 1rem 0px;
+
+    /* padding: 2rem 0px; */
     min-height: 100vh;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    gap: 0px;
+    gap: 1rem;
   }
 
   .profile__foto {
