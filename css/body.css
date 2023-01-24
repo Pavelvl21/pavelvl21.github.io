@@ -1,10 +1,4 @@
 .body {
-  font-family: 'Tahoma', 'Geneva', sans-serif;
-  color: var(--primary-text-color);
-  background-color: var(--background-color);
-}
-
-.body {
   display: grid;
   grid-template-columns: 32% 1fr;
   grid-template-rows: auto 1fr auto;
@@ -14,6 +8,9 @@
     "footer footer";
   max-width: 1200px;
   margin: 0 auto;
+  font-family: Tahoma, Geneva, sans-serif;
+  color: var(--background-color);
+  background-color: var(--background-color);
 }
 
 @media screen and (max-width: 962px) {
