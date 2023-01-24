@@ -34,10 +34,11 @@
 
 @media screen and (max-width: 962px) {
   .sidebar {
+    gap: 0px;
 
     padding-top: 2rem;
     padding-bottom: 3rem;
-    min-height: 100vh;
+    height: calc(100vh - 5rem);
     justify-content: space-around;
     align-items: center;
     /* gap: 1rem; */
