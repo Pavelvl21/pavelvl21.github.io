@@ -32,7 +32,7 @@ const header = document.querySelector('.header');
 const sections = document.querySelectorAll('.section');
 const containerContet = [header, ...sections];
 
-const menu = document.querySelector('.menu');
+const menu = document.querySelector('.side-menu');
 
 const buttonIcons = document.querySelectorAll('.menu-icon');
 
@@ -47,8 +47,8 @@ const cb = ({ target }) => {
   target.name === 'resume' || target.name === 'about'
     ? containerContet.forEach(setDefault)
     : setVisible(currentElement);
-  if (!menu.classList.contains('menu--hidden')) {
-    menu.classList.add('menu--hidden');
+  if (!menu.classList.contains('side-menu--hidden')) {
+    menu.classList.add('side-menu--hidden');
     buttonIcons.forEach((button) =>
       button.classList.toggle('menu-icon--hidden')
     );
@@ -59,8 +59,8 @@ const app = () => {
   const overlay = [sidebar, resume, menu];
   overlay.forEach((item) => {
     item.addEventListener('click', () => {
-      if (!menu.classList.contains('menu--hidden')) {
-        menu.classList.add('menu--hidden');
+      if (!menu.classList.contains('side-menu--hidden')) {
+        menu.classList.add('side-menu--hidden');
         buttonIcons.forEach((button) =>
           button.classList.toggle('menu-icon--hidden')
         );
@@ -82,7 +82,7 @@ const app = () => {
   
   menuButton.addEventListener('click', () => {    
     buttonIcons.forEach((button) => button.classList.toggle('menu-icon--hidden'));
-    menu.classList.toggle('menu--hidden');    
+    menu.classList.toggle('side-menu--hidden');    
   });
 
   

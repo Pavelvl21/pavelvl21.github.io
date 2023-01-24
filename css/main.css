@@ -1,0 +1,160 @@
+.resume {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 2rem;
+
+  background-color: var(--text-color);
+}
+
+
+.container {
+  margin: 1rem 1rem;
+  padding: 1rem 2rem;
+  border-left: 1px solid var(--divider-color);
+  width: calc(100% - 6rem);
+
+}
+
+@media screen and (max-width: 962px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 0px;
+    padding: 1rem;
+    border: none;
+    min-height: 50vh; 
+    width: calc(100% - 2rem)
+  }
+
+}
+
+
+
+.container__header {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+.header__name {
+
+  font-weight: 700;
+  font-size: clamp(3rem, 10vw, 6rem);
+  text-transform: uppercase;
+  padding-bottom: 1.5rem;
+
+
+}
+
+.header__firstname {
+  color: var(--primary-text-color);
+  ;
+}
+
+.header__lastname {
+  color: var(--accent-color);
+}
+
+.header__prof {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
+
+
+.container__section:not(:last-child) {
+  margin-bottom: 2rem;
+
+  border-bottom: 1px solid var(--divider-color);
+
+}
+
+.container__section--visible,
+.container__header--visible {
+  padding-top: 1rem;
+  width: 100%;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 962px) {
+
+  .container__section--visible,
+  .container__header--visible {
+    padding-top: 2rem;
+  }
+}
+
+.container__section--hidden,
+.container__header--hidden {
+  display: none;
+
+
+}
+
+.section__title {
+  padding-bottom: 1.5rem;
+  color: var(--accent-color);
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.item__title {
+  width: 80%;
+
+}
+
+
+
+.item__dates {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: var(--accent-color);
+}
+
+.section__item {
+  padding-bottom: 1rem;
+}
+
+/* .section__item--inline {
+  
+  align-items: center;
+} */
+
+.item__title--inline {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 962px) {
+
+  .container__header {
+    margin-bottom: 0px;
+  }
+
+}
+
+.item__link {
+  color: var(--accent-color);
+}
+
+.item__link:hover {
+  color: var(--background-color);
+  transition: 0.2s;
+}
+
+.item__link:not(:hover) {
+  color: var(--accent-color);
+  transition: 0.4s;
+}
