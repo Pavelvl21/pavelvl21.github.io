@@ -1,110 +1,90 @@
-nav {
+.nav {
   grid-area: nav;
-
   text-align: center;
 }
 
-.menu {
+.nav-button {
+  user-select: none;
+}
+
+.nav-icon {
+  display: none;
+}
+
+@media screen and (max-width: 962px) {
+  .nav-icon {
+    position: fixed;
+    right: 0.5rem;
+    z-index: 200;
+    display: block;
+    fill: var(--accent-color); 
+  }
+
+  .nav-icon--hidden {
+    opacity: 0;
+    transition: 0.4s;
+  }
+
+  .nav-menu {
+    right: 0;
+    position: fixed;
+    z-index: 100;
+    display: block;
+    height: 100vh;
+    width: auto;
+    background-color: white;
+    opacity: 0.7;
+  }
+
+  .nav-menu--hidden {
+    display: none;
+  }
+}
+
+.nav-list {
   display: flex;
   gap: 2.5rem;
   justify-content: center;
   list-style-type: none;
 }
 
-.menu__item {
+@media screen and (max-width: 962px) {
+  .nav-list {    
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 1rem;
+  }
+}
+
+.list-item {
   text-decoration: none;
   color: var(--primary-color-light);
   user-select: none;
-
-
 }
 
-.menu__item:hover {
+.list-item[name="about"] {
+  display: none;
+}
+
+.list-item:hover {
   color: var(--accent-color);
   transition: 0.2s;
 }
 
-.menu__item:not(:hover) {
+.list-item:not(:hover) {
   color: var(--primary-color-light);
   transition: 0.4s;
 }
 
-.footer__item:hover {
-  color: var(--accent-color);
-  transition: 0.2s;
-}
-
-
-@media screen and (min-width: 962px) {
-  .menu-icon {
-    display: none;
-  }
-
-  .menu__item[name="about"] {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 962px) {
-
-
-  .side-menu {
+  .list-item[name="about"] {
     display: block;
-    position: fixed;
-    z-index: 100;
-    right: 0;
-
-    height: 100vh;
-    width: auto;
-    background-color: white;
-    opacity: 0.7;
-
-
-
   }
 
-  .menu {
-    padding: 1rem;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-  }
-
-  .side-menu--hidden {
-    display: none;
-  }
-
-  .menu-button {
-
-    user-select: none;
-
-  }
-
-  .menu-icon {
-    position: fixed;
-    right: 0.5rem;
-    z-index: 200;
-
-
-    fill: var(--accent-color);
-
-  }
-
-
-  .menu-icon--hidden {
-    opacity: 0;
-    transition: 0.4s;
-  }
-
-  .menu__item {
+  .list-item {
     font-size: 1.2rem;
-    color: var(--primary-color) !important;
     font-weight: 700;
-  }
-}
-
-@media print {
-  .nav {
-    visibility: hidden;
+    color: var(--primary-color) !important;    
   }
 }

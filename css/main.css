@@ -142,6 +142,10 @@
 }
 
 @media screen and (max-width: 962px) {
+  .container__header,
+    .section__title {
+      text-align: center;
+    }
 
   .container__header {
     margin-bottom: 0px;
