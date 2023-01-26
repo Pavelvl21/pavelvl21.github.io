@@ -13,6 +13,7 @@ export default (option = '') => (element) => {
   setWipe(element);
   if (element.classList.contains('header')) {
     element.classList.add(`container-header${option}`);
-  }
-  element.classList.add(`container-section${option}`);
+  } else {
+    element.classList.add(`container-section${option}`);
+  }  
 };

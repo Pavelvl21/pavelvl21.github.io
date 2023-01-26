@@ -6,17 +6,13 @@ const elements = {
     document.querySelector('.header'),
     ...document.querySelectorAll('.section'),
   ],
-  overlay: {
-    menu: document.querySelector('.nav-menu'),
-    resume: document.querySelector('.resume'),
-    sidebar: document.querySelector('.sidebar'),
-  },
+  menu: document.querySelector('.nav-menu'),
   buttonIcons: document.querySelectorAll('.nav-icon'),
   menuButton: document.querySelector('.nav-button'),
   links: document.querySelectorAll('.list-item'),
 };
 
-const handleClaccName = (cn, cl) => {
+const handleClassName = (cn, cl) => {
   cn.classList.toggle('nav-menu--hidden');
   cl.forEach((item) => item.classList.toggle('nav-icon--hidden'));
 };
@@ -26,23 +22,16 @@ const handleLinks = ({ target }) => {
   const currentElement = document.querySelector(`#${target.name}`);
   if (target.name === 'resume' || target.name === 'about') {
     elements.containerContet.forEach(setOption());
+  } else {
+    setOption('--visible')(currentElement);
+    handleClassName(elements.menu, elements.buttonIcons);
   }
-  setOption('--visible')(currentElement);
-  handleClaccName(elements.overlay.menu, elements.buttonIcons);
 };
 
 export default () => {
-  Object.values(elements.overlay).forEach((item) => {
-    item.addEventListener('click', () => {
-      handleClaccName(elements.overlay.menu, elements.buttonIcons);
-    });
-  });
-
   elements.links.forEach((link) => link.addEventListener('click', handleLinks));
-
   elements.menuButton.addEventListener('click', () => {
-    handleClaccName(elements.overlay.menu, elements.buttonIcons);
+    handleClassName(elements.menu, elements.buttonIcons);
   });
-
   toggleAttr();
 };
