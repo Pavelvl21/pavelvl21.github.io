@@ -24,8 +24,8 @@ const handleLinks = ({ target }) => {
     elements.containerContet.forEach(setOption());
   } else {
     setOption('--visible')(currentElement);
-    handleClassName(elements.menu, elements.buttonIcons);
   }
+  handleClassName(elements.menu, elements.buttonIcons);
 };
 
 export default () => {
